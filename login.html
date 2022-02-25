@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOgin</title>
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .login-form input,
+        button {
+            font-size: 1.1em;
+            padding-left: 20px;
+            margin-top:10px;
+            border:1px solid red;
+            border-radius: 10px;
+        }
+
+        .login-form button{
+            background-image: linear-gradient(orange,red);
+            border:green;
+            color:whitesmoke;
+            font-weight: 700px;
+           
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-container">
+        <form class="login-form">
+            <h3>Email:</h3>
+            <input type="email" id="email" name="email" placeholder="Write your Email" required>
+            <!-- <h3>password:</h3> -->
+            <input type="password" id="password" name="password" placeholder="Write your password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+
+</html>

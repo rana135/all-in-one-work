@@ -1,0 +1,43 @@
+.football-post{
+    height: 300px;
+}
+.football{
+    height: 50px;
+    position: relative;
+    top:250px;
+    left:390px;
+    transition:transform 0.2s;
+}
+.boy{
+    width: 200px;
+    position: relative;
+    top:290px;
+    left:390px;
+    
+}
+.field:hover .football{
+    /* position: relative;
+    top:-160px;
+    left:-150px; */
+    transition: transform 0.1s; 
+    transform:translate(-550px,-420px)
+}
+.field:hover .boy{
+   transition: transform;
+    transform:rotate(30deg);
+    transform-origin: top left;
+}
+.field{
+    height: 600px;
+    border:1px solid red;
+}
+.goal{
+    height:2px;
+    position: relative;
+    left:500px;
+}
+.field:hover .goal{
+    transform:scale(150)   
+       
+}
+football-post

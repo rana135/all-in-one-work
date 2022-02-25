@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>high</title>
+    <style>
+           @keyframes sliding{
+               0%{
+                   background-color:lightyellow;
+                   left:0px;
+                   top:0px;
+                   transform: scale(0.5);
+               }
+               25%{
+                   top:250px;
+                   background-color: mediumaquamarine;
+               }
+               50%{
+                    top:0px;
+                    background-color: mediumorchid;
+               }
+               75%{
+                   top:250px;
+                   background-color: olive;
+               }
+               100%{
+                   background-color:red;
+                   left:600px;
+                   top:0px;
+               }
+            }
+            .ball{
+                height: 50px;
+                width:50px;
+                border-radius: 50px;
+                background-color: limegreen;
+                animation: sliding 3s ease-in-out 0.5s infinite alternate;
+                animation-play-state: running;
+                position:relative;
+               
+            }
+            .stage{
+                height: 350px;
+                width:650px;
+                background-color: salmon;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
